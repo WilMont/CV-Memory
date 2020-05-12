@@ -7,7 +7,37 @@
 body {
   height: 80vh;
   display: flex;
-  background: #252525;
+  background: #3DB680;
+}
+
+.presentation{
+  background-color: white;
+
+  position: fixed;
+  width: 20vw;
+  height: auto;
+  top: 6vh;
+  left: 1vh;
+
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.presentation p{
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+  color: #252525;
+  font-family: "Gill Sans", sans-serif;
+}
+
+#photo-profil{
+  margin-left: 2%;
+  margin-top: 2%;
+  width: 50%;
+
+  border-radius: 5px;
 }
 
 .memory-game {
@@ -16,6 +46,7 @@ body {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  -webkit-perspective: 1000px;
   perspective: 1000px;
 }
 
@@ -24,18 +55,23 @@ body {
   height: calc(28% - 10px);
   margin: 5px;
   position: relative;
+  -webkit-transform: scale(1);
   transform: scale(1);
   transform-style: preserve-3d;
-  transition: transform .5s;
+  -webkit-transition: transform 0.5s;
+  transition: transform 0.5s;
   box-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
 
 .memory-card:active {
+  -webkit-transform: scale(0.97);
   transform: scale(0.97);
-  transition: transform .2s;
+  -webkit-transition: transform 0.2s;
+  transition: transform 0.2s;
 }
 
 .memory-card.flip {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
@@ -47,9 +83,11 @@ body {
   position: absolute;
   border-radius: 5px;
   background: whitesmoke;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .front-face {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
