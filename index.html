@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,87 +11,148 @@
 </head>
 
 <body>
-  <div class="presentation">
-      <img id="photo-profil" src="img/photo_profil.jpg" alt="photo-profil"/>
+  <div id="mainRow">
+    <div class="presentation">
+      <img id="photo-profil" src="img/photo_profil.jpg" alt="photo-profil" />
       <p>Bonjour, je m'appelle Wilfried Montagne, j'ai 21 ans et je suis en 3ème année à EPSI Nantes. <br /><br>
-         Je vous propose ce petit jeu de memory afin de découvir les diplômes et compétences que j'ai pu acquérir,
-         ainsi que les expériences professionnelles que j'ai pu effectuer.</p>
+        Je vous propose ce petit jeu de memory afin de découvir les diplômes et compétences que j'ai pu acquérir,
+        ainsi que les expériences professionnelles que j'ai pu effectuer. <br>
+        Retrouvez mon CV entier <a href="https://wilfriedmontagne.wordpress.com/mon-cv/">ICI</a></p>
+    </div>
+
+
+
+
+    <div class="memoryGame">
+      <div class="memoryCard" data-framework="bouygues">
+        <img class="front-face" src="img/icone_bouygues.png" alt="Bouygues" />
+        <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
+      </div>
+      <div class="memoryCard" data-framework="bouygues">
+        <img class="front-face" src="img/icone_bouygues.png" alt="Bouygues" />
+        <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
+      </div>
+
+      <div class="memoryCard" data-framework="lmdt">
+        <img class="front-face" src="img/icone_lmdt.png" alt="La Maison du Taraud" />
+        <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
+      </div>
+      <div class="memoryCard" data-framework="lmdt">
+        <img class="front-face" src="img/icone_lmdt.png" alt="La Maison du Taraud" />
+        <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
+      </div>
+
+      <div class="memoryCard" data-framework="csharp">
+        <img class="front-face" src="img/icone_csharp.png" alt="C#" />
+        <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
+      </div>
+      <div class="memoryCard" data-framework="csharp">
+        <img class="front-face" src="img/icone_csharp.png" alt="C#" />
+        <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
+      </div>
+
+      <div class="memoryCard" data-framework="java">
+        <img class="front-face" src="img/icone_java.png" alt="Java" />
+        <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
+      </div>
+      <div class="memoryCard" data-framework="java">
+        <img class="front-face" src="img/icone_java.png" alt="Java" />
+        <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
+      </div>
+
+      <div class="memoryCard" data-framework="php">
+        <img class="front-face" src="img/icone_php.png" alt="Php" />
+        <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
+      </div>
+      <div class="memoryCard" data-framework="php">
+        <img class="front-face" src="img/icone_php.png" alt="Php" />
+        <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
+      </div>
+
+      <div class="memoryCard" data-framework="python">
+        <img class="front-face" src="img/icone_python.png" alt="Python" />
+        <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
+      </div>
+      <div class="memoryCard" data-framework="python">
+        <img class="front-face" src="img/icone_python.png" alt="Python" />
+        <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
+      </div>
+
+      <div class="memoryCard" data-framework="bts">
+        <img class="front-face" src="img/icone_diplomeBTS.png" alt="BTS" />
+        <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
+      </div>
+      <div class="memoryCard" data-framework="bts">
+        <img class="front-face" src="img/icone_diplomeBTS.png" alt="BTS" />
+        <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
+      </div>
+
+      <div class="memoryCard" data-framework="bacs">
+        <img class="front-face" src="img/icone_diplomeBACS.png" alt="Bac S" />
+        <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
+      </div>
+      <div class="memoryCard" data-framework="bacs">
+        <img class="front-face" src="img/icone_diplomeBACS.png" alt="Bac S" />
+        <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
+      </div>
+
+    </div>
+
+    <div class="descriptionsContainer">
+      <h2><u>Expériences</u></h2>
+      <div class="description" data-framework="lmdt" id="experienceLMDT">
+        <p><b>La Maison du Taraud - Janvier 2019 à février 2019</b> <br>
+          Développement d'une application iOS et Android d'aide à la détermination
+          du filetage d'un taraud en Xamarin/C#</p>
+      </div>
+
+      <div class="description" data-framework="bouygues" id="experienceBouygues">
+        <p><b>Bouygues Telecom - Mai 2018 à août 2018</b> <br>
+          - Tests unitaires en Java <br>
+          - Développement en TypeScript</p>
+      </div>
+
+      <br>
+
+
+      <h2><u>Diplômes</u></h2>
+      <div class="description" data-framework="bts" id="diplomeBTS">
+        <p><b>BTS SIO - 2017 à 2019</b> <br>
+          Option Solutions Logicielles et Applications Métier (SLAM)</p>
+      </div>
+
+      <div class="description" data-framework="bacs" id="diplomeBAC">
+        <p><b>BAC S - 2016 à 2017</b> <br>
+          LGT Jacques Prévert, Savenay</p>
+      </div>
+
+      <br>
+
+      <h2><u>Compétences</u></h2>
+      <div class="description" data-framework="csharp" id="cSharp">
+        <p><b>C#</b> <a href="https://wilfriedmontagne.wordpress.com/air-atlantique-back-office/">Exemple de projet</a>
+        </p>
+      </div>
+
+      <div class="description" data-framework="java" id="java">
+        <p><b>Java</b> <a href="https://wilfriedmontagne.wordpress.com/stage-2018/">Exemple de projet</a> </p>
+      </div>
+
+      <div class="description" data-framework="php" id="php">
+        <p><b>PHP / Symfony</b> <a href="https://wilfriedmontagne.wordpress.com/air-atlantique-front-office/">Exemple de
+            projet</a> </p>
+      </div>
+
+      <div class="description" data-framework="python" id="python">
+        <p><b>Python</b> <a href="https://wilfriedmontagne.wordpress.com/pykemon/">Exemple de projet</a> </p>
+      </div>
+
+    </div>
   </div>
 
-  <section class="memory-game">
-    <div class="memory-card" data-framework="bouygues">
-      <img class="front-face" src="img/icone_bouygues.png" alt="Bouygues"/>
-      <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
-    </div>
-    <div class="memory-card" data-framework="bouygues">
-      <img class="front-face" src="img/icone_bouygues.png" alt="Bouygues"/>
-      <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
-    </div>
-
-    <div class="memory-card" data-framework="lmdt">
-        <img class="front-face" src="img/icone_lmdt.png" alt="La Maison du Taraud" />
-        <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
-    </div>
-    <div class="memory-card" data-framework="lmdt">
-        <img class="front-face" src="img/icone_lmdt.png" alt="La Maison du Taraud" />
-        <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
-    </div>
-
-    <div class="memory-card" data-framework="csharp">
-      <img class="front-face" src="img/icone_csharp.png" alt="C#" />
-      <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
-    </div>
-    <div class="memory-card" data-framework="csharp">
-      <img class="front-face" src="img/icone_csharp.png" alt="C#" />
-      <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
-    </div>
-
-    <div class="memory-card" data-framework="java">
-      <img class="front-face" src="img/icone_java.png" alt="Java" />
-      <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
-    </div>
-    <div class="memory-card" data-framework="java">
-      <img class="front-face" src="img/icone_java.png" alt="Java" />
-      <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
-    </div>
-
-    <div class="memory-card" data-framework="php">
-        <img class="front-face" src="img/icone_php.png" alt="Php" />
-        <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
-      </div>
-      <div class="memory-card" data-framework="php">
-        <img class="front-face" src="img/icone_php.png" alt="Php" />
-        <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
-      </div>
-
-      <div class="memory-card" data-framework="python">
-          <img class="front-face" src="img/icone_python.png" alt="Python" />
-          <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
-        </div>
-        <div class="memory-card" data-framework="python">
-          <img class="front-face" src="img/icone_python.png" alt="Python" />
-          <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
-        </div>
-
-    <div class="memory-card" data-framework="bts">
-      <img class="front-face" src="img/icone_diplomeBTS.png" alt="BTS" />
-      <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
-    </div>
-    <div class="memory-card" data-framework="bts">
-      <img class="front-face" src="img/icone_diplomeBTS.png" alt="BTS" />
-      <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
-    </div>
-
-    <div class="memory-card" data-framework="bacs">
-      <img class="front-face" src="img/icone_diplomeBACS.png" alt="Bac S" />
-      <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
-    </div>
-    <div class="memory-card" data-framework="bacs">
-      <img class="front-face" src="img/icone_diplomeBACS.png" alt="Bac S" />
-      <img class="back-face" src="img/icone_inconnu.png" alt="Inconnu" />
-    </div>
-  </section>
+  <button id="revelateAllButton" onclick="flipAll()">Tout révéler</button>
 
   <script src="scripts.js"></script>
 </body>
+
 </html>

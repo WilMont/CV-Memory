@@ -5,28 +5,29 @@
 }
 
 body {
-  height: 80vh;
-  display: flex;
   background: #3DB680;
 }
 
-.presentation{
-  background-color: white;
-
-  position: fixed;
-  width: 20vw;
-  height: auto;
-  top: 6vh;
-  left: 1vh;
-
-  border-radius: 5px;
-  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+#mainRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
 }
 
-.presentation p{
-  margin-left: 2%;
-  margin-top: 2%;
-  margin-bottom: 2%;
+.presentation{
+  background-color: whitesmoke;
+
+  margin: auto;
+  padding: 20px;
+  width: 500px;
+  max-width: 90vw;
+
+  border: 1px solid #252525;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px -2px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.75);
 
   color: #252525;
   font-family: "Gill Sans", sans-serif;
@@ -34,44 +35,41 @@ body {
 }
 
 #photo-profil{
-  margin-left: 2%;
-  margin-top: 2%;
   width: 50%;
-
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-.memory-game {
+.memoryGame {
+  max-width: 90vw;
   width: 640px;
   height: 640px;
+  max-width: 110vw;
+  max-height: 110vh;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
 }
 
-.memory-card {
+.memoryCard {
   width: calc(25% - 10px);
   height: calc(28% - 10px);
   margin: 5px;
-  position: relative;
   -webkit-transform: scale(1);
   transform: scale(1);
   transform-style: preserve-3d;
   -webkit-transition: transform 0.5s;
   transition: transform 0.5s;
-  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
 
-.memory-card:active {
+.memoryCard:active {
   -webkit-transform: scale(0.97);
   transform: scale(0.97);
   -webkit-transition: transform 0.2s;
   transition: transform 0.2s;
 }
 
-.memory-card.flip {
+.memoryCard.flip {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
@@ -82,10 +80,14 @@ body {
   height: 100%;
   padding: 20px;
   position: absolute;
-  border-radius: 5px;
   background: whitesmoke;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border: 1px solid #252525;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px -2px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.75);
 }
 
 .front-face {
@@ -93,73 +95,101 @@ body {
   transform: rotateY(180deg);
 }
 
-
-@media (max-width: 640px)
-{
-    
-  .presentation{
-    width: 95vw;
-    top: 2vh;
-  }
-
-  .presentation p{
-    font-size: 75%;
-  }
-
-  #photo-profil{
-    width: 25%;
-  }
-
-  .memory-game {
-    margin-top: 70%;
-    width: 300px;
-    height: 300px;
-  }
-
+.descriptionsContainer {
+  margin: auto;
+  margin-top: 20px;
 }
 
-@media (min-width: 640px) and (max-width: 1024px){
+.descriptionsContainer h2 {
+  color: #252525;
+  font-family: "Gill Sans", sans-serif;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
 
-  .presentation{
-    width: 95vw;
-    top: 2vh;
-  }
+#experienceLMDT, #experienceBouygues, #diplomeBTS, #diplomeBAC, #cSharp, #python, #php, #java {
+  opacity: 0;
+  width: 400px;
+  margin: 5px;
+  border: 1px solid #252525;
+  -webkit-box-shadow: inset 0px -2px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.75);
+  padding: 20px;
+  border-radius: 5px;
+  background: whitesmoke;
 
-  #photo-profil{
-    width: 20%;
-  }
+  color: #252525;
+  font-family: "Gill Sans", sans-serif;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 
-  .presentation p{
+  transition-duration: 1s;
+}
+
+#revelateAllButton {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px;
+  width: auto;
+
+  color: whitesmoke;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 125%;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+
+  background: #252525;
+  border: 1px solid #252525;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px -2px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 0px -3px 0px 0px rgba(0,0,0,0.75);
+}
+
+
+@media (max-width: 1024px)
+{
+    
+  #mainRow {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
     font-size: 150%;
   }
 
-  .memory-game {
-    margin-bottom: -10%;
-    width: 700px;
-    height: 700px;
+  .presentation {
+    margin: 20px;
+    width: 90vw;
+  }
+
+  .memoryGame {
+    margin-top: 20px;
+    margin-bottom: 110px;
+    width: 95vw;
+    height: 60vh;
+  }
+
+  #experienceLMDT, #experienceBouygues, #diplomeBTS, #diplomeBAC, #cSharp, #python, #php, #java {
+    width: 90vw;
+  }
+
+  .descriptionsContainer {
+    margin: auto;
+    margin-top: 0;
+  }
+
+  #revelateAllButton {
+    font-size: 150%;
+    width: 90vw;
+    margin-top: 20px;
   }
 
 }
 
-@media (width: 768px){
-
-  .presentation{
-    width: 95vw;
-    top: 2vh;
-  }
-
-  #photo-profil{
-    width: 20%;
-  }
-
-  .presentation p{
-    font-size: 100%;
-  }
-
-  .memory-game {
-    margin-bottom: -10%;
-    width: 550px;
-    height: 550px;
+@media (max-width: 700px){
+  body {
+    font-size: 50%;
   }
   
 }
